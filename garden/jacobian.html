@@ -1,0 +1,81 @@
+---
+title: Jacobian
+layout: page
+comments: false
+---
+
+<div id="content"><h2 id="jacobian">Jacobian</h2>
+
+<p><span class="tag">MVC</span> </p>
+
+<h3 id="definition">Definition</h3>
+
+<p>Given two co-ordinates $u(x, y)$ and $v(x, y)$ which depend on variables $x$ and $y$, we define the <a href="jacobian">Jacobian</a><br />
+$$<br />
+\frac{\partial(u, v)}{\partial(x, y)}<br />
+$$<br />
+to be the <a href="determinant">Determinant</a><br />
+$$<br />
+\left|\begin{array}{ll}<br />
+\frac{\partial u}{\partial x} &amp; \frac{\partial u}{\partial y} \<br />
+\frac{\partial v}{\partial x} &amp; \frac{\partial v}{\partial y}<br />
+\end{array}\right|<br />
+$$<br />
+In 3D, we define the <a href="jacobian">Jacobian</a><br />
+$$<br />
+\frac{\partial(u, v, w)}{\partial(x, y, z)}<br />
+$$<br />
+to be the <a href="determinant">Determinant</a><br />
+$$<br />
+\left|\begin{array}{ccc}<br />
+\frac{\partial u}{\partial x} &amp; \frac{\partial u}{\partial y} &amp; \frac{\partial u}{\partial z} \<br />
+\frac{\partial v}{\partial x} &amp; \frac{\partial v}{\partial y} &amp; \frac{\partial v}{\partial z} \<br />
+\frac{\partial w}{\partial x} &amp; \frac{\partial w}{\partial y} &amp; \frac{\partial w}{\partial z}<br />
+\end{array}\right|<br />
+$$</p>
+
+<p><a href="plane-polar-coordinates#jacobian">Jacobian</a></p>
+</div>
+
+
+
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz"
+  crossorigin="anonymous"></script>
+
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
+  crossorigin="anonymous"></script>
+
+<!-- Parsing single dollar signs -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+        {left: "\\[", right: "\\]", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+      ]
+  });
+  });
+</script>
+
+
+
+<!-- Syntax highlighting through highlight.js -->
+<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.4.0/styles/default.min.css">
+<script src="https://unpkg.com/@highlightjs/cdn-assets@10.4.0/highlight.min.js"></script>
+
+<script>
+  // Ignore highlighting of mermaid
+  hljs.configure({noHighlightRe: /^mermaid$/});
+  hljs.initHighlightingOnLoad();
+</script>
